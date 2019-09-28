@@ -6,13 +6,13 @@ Add loading animation while image is loading full customizable
 
 Installation 
 
-    npm i smoothimage
+#    npm i smoothimage
 
 Usage
 
     import React from 'react';
     import { View } from 'react-native';
-    import SmoothImage from 'smoothimage'
+#   import SmoothImage from 'smoothimage'
 
     const componentName = (params) => (
         <View>
