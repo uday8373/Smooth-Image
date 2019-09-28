@@ -1,6 +1,7 @@
 # Smooth-Image
 Enhance the image loading in React Native => 59.0 Applications
 
+Very lightweight library for -
 Add loading animation while image is loading full customizable 
 
 Installation 
