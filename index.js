@@ -1,9 +1,6 @@
-
-//import liraries
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, ActivityIndicator, Animated } from 'react-native';
 
-// create a component
 export default (props) =>  {
   state = {loading: false, fadeOn: new Animated.Value(0)}
   const [loading, setLoading] = useState(false)
@@ -11,23 +8,12 @@ export default (props) =>  {
   const {source, style, loaderColor, loaderBackgroundStyle} = props
 
   const onLoadStart = () => {
-   setLoading(true)
-    console.log("Started");
-    
+   setLoading(true) 
   }
   const onLoadEnd = () => {
-    setTimeout(() => {
       setLoading(false)
-      Animated.timing(
-        fadeAnim,
-        {
-          toValue: 1,
-          duration: 2000,
-        }
-      ).start();
-    }, 2000)
+      Animated.timing(fadeAnim,{toValue: 1,duration: 2000}).start();
   }
-
     return (
       <>
       {loading &&
@@ -58,8 +44,5 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center'
-  },
-  imageLoader: {
-    width: '100%'
   }
 });
