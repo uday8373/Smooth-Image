@@ -4,15 +4,15 @@ Enhance the image loading in React Native => 59.0 Applications
 Very lightweight library for -
 Add loading animation while image is loading full customizable 
 
-Installation 
+#Installation 
 
-#    npm i smoothimage
+    npm i smoothimage
 
-Usage
+#Usage
 
     import React from 'react';
     import { View } from 'react-native';
-#   import SmoothImage from 'smoothimage'
+    import SmoothImage from 'smoothimage'
 
     const componentName = (params) => (
         <View>
@@ -28,7 +28,7 @@ Usage
     export default componentName;
 
 
-PROPS 
+#PROPS 
 
       style - style object
       loaderColor  - String (Color code or name)

@@ -1,6 +1,6 @@
 {
   "name": "smoothimage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React native image with loading effect while loading",
   "main": "index.js",
   "scripts": {
