@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, ActivityIndicator, Animated } from 'react-native';
+import { View, StyleSheet, ActivityIndicator, Animated } from 'react-native';
 
 export default (props) =>  {
-  state = {loading: false, fadeOn: new Animated.Value(0)}
   const [loading, setLoading] = useState(false)
   const [fadeAnim] = useState(new Animated.Value(0))
   const {source, style, loaderColor, loaderBackgroundStyle} = props
@@ -12,7 +11,7 @@ export default (props) =>  {
   }
   const onLoadEnd = () => {
       setLoading(false)
-      Animated.timing(fadeAnim,{toValue: 1,duration: 2000}).start();
+      Animated.timing(fadeAnim,{toValue: 1,duration: 1000}).start();
   }
     return (
       <>
